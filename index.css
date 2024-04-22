@@ -70,6 +70,8 @@
     color: red;
     font-weight: 300;
     padding: 0rem;
+    font-family: "Great Vibes", sans-serif;
+    font-weight: bold;
     
   }
   .navbar{
@@ -338,3 +340,76 @@ color: var(--main-color);
 
 
 /* PROJECT */
+
+.projects{
+    padding: 3rem;
+    background-color: var(--second-bg-color);
+}
+
+.projects h2{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 6rem;
+}
+
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.projects-box{
+    flex: 1 1 20rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-box img{
+    width: 100%;
+    
+}
+
+.projects-box:hover img{
+    opacity: 0.5;
+}
+
+.poz{
+
+    /* border: 2px solid orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(50%);
+    transition: all 0.7s;
+    text-align: center;
+    opacity: 0;
+    /* align-items: center; */
+    
+
+    
+}
+
+.poz a{
+    font-size: 2rem;
+    font-family: "Playfair Display SC", serif;
+    color: var(--main-color);
+    width: 100%;
+}
+
+.projects-box:hover .poz{
+
+    transform: translateY(-50%);
+    box-shadow: 1rem 1rem 10rem black;
+    opacity: 1;
+    font-weight: bold;
+
+    /* box-shadow: black; */
+    /* text-align: center; */
+    /* align-items: center; */
+
+}

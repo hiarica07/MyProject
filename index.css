@@ -413,3 +413,14 @@ color: var(--main-color);
     /* align-items: center; */
 
 }
+
+.hidden-message{
+    display: none;
+    margin: 40px;
+    position: relative;
+}
+
+.btn:focus + .hidden-message {
+    display: block;
+    font-size: 1rem;
+}
